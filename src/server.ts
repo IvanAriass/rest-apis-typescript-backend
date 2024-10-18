@@ -31,6 +31,7 @@ const corsOptions : CorsOptions = {
      callback(null, true);
     } else {
       console.log(`Frontend URL: ${process.env.FRONTEND_URL}`);
+      console.log(`Origin: ${origin}`);
       callback(new Error('Not allowed by CORS'));
     }
   },
