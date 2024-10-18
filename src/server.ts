@@ -30,6 +30,7 @@ const corsOptions : CorsOptions = {
      console.log(colors.green('Allowed by CORS'));
      callback(null, true);
     } else {
+      console.log(`Frontend URL: ${process.env.FRONTEND_URL}`);
       callback(new Error('Not allowed by CORS'));
     }
   },
